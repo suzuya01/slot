@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Slot Machine</title>
+</head>
+<body>
+  <div  class="bg-red-100 h-screen flex items-center jusudy-center">
+    <div class=""></div>
+    <div id="BlockSlot" class="container mx-auto bg-red-200 w-1/2 h-5/6 rounded-t-full p-10">
+      <div id="BlockSlot" class="container mx-auto bg-red-300 w-full h-full rounded-t-full p-10">
+          <div id="BlockSlot" class="container mx-auto bg-red-400 w-full h-full rounded-t-full flex items-center flex-col justify-center p-6">
+              <div class="h-2/6 flex items-center ">
+                <h1 id="title" class="text-8xl font-bold text-red-500 text-center">
+                  <span>S</span>
+                  <span>l</span>
+                  <span>o</span>
+                  <span>t</span>
+                  <br>
+                  <span>M</span>
+                  <span>a</span>
+                  <span>c</span>
+                  <span>h</span>
+                  <span>i</span>
+                  <span>n</span>
+                  <span>e</span>
+                </h1>
+              </div>
+              <div class="w-full h-1/2 flex items-end justify-around p-6">
+                <div id="Block" class="bg-white h-5/6 w-2/3 rounded-l-full flex items-center justify-center overflow-hidden">
+                  <div id="SpinBlock">
+                    <img id="img0" src="./image/0.png" alt="" width="120px">
+                  </div>
+                </div>
+                <div id="Block" class="bg-white h-5/6 w-2/3 flex items-center justify-center overflow-hidden">
+                  <div id="SpinBlock">
+                    <img id="img1" src="./image/0.png" alt="" width="120px">
+                  </div>
+                </div>
+                <div id="Block" class="bg-white h-5/6 w-2/3 rounded-r-full flex items-center justify-center overflow-hidden">
+                  <div id="SpinBlock">
+                    <img id="img2" src="./image/0.png" alt="" width="120px">
+                  </div>
+                </div>
+              </div>
+              <div id="BlockBtn" class="flex gap-6">
+                <button id="BtnRestart" class="bg-red-500 rounded-l-full rounded-r-full text-2xl font-semibold text-red-300 w-[250px] h-[50px]">Restart</button>
+                <button id="BtnSpin" onclick="game()" class="bg-red-500 rounded-l-full rounded-r-full text-2xl font-semibold text-red-300 w-[250px] h-[50px]">Spin</button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

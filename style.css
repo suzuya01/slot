@@ -1,0 +1,81 @@
+#BlockSlot{
+  box-shadow: inset 0 0 32px 0 rgb(0 0 0 / 0.2) !important;
+}
+#Block{
+  box-shadow: inset 0 0 2px 0 rgb(0 0 0 / 0.2) !important;
+}
+#title{
+  /* text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.2); */
+  letter-spacing: -13px;
+  animation: Anim 1s linear;
+}
+#BtnSpin,
+#BtnRestart{
+  box-shadow: 6px 7px 0  rgb(0 0 0 / 0.2) !important;
+  transition: 0.2s ease-out;
+}
+#BtnSpin:hover,
+#BtnRestart:hover{
+  position: relative;
+  box-shadow: 0 0 0  rgb(0 0 0 / 0) !important;
+  transform: translate(5px,5px);
+}
+
+span{
+  position: relative;
+  text-shadow: 6px 7px 0  rgb(0 0 0 / 0.2) !important;
+}
+
+#title>span:nth-child(1){
+}
+#title>span:nth-child(2){
+}
+#title>span:nth-child(3){
+}
+#title>span:nth-child(4){
+}
+#title>span:nth-child(5){
+}
+#title>span:nth-child(6){
+}
+#title>span:nth-child(7){
+}
+#title>span:nth-child(8){
+}
+#title>span:nth-child(9){
+}
+#title>span:nth-child(10){
+}
+#title>span:nth-child(11){
+}
+
+@keyframes Anim {
+  0%{
+    text-shadow: 6px 7px 0  rgb(0 0 0 / 0.2) !important;
+    
+  }
+  100%{
+    text-shadow: 0 0 0  rgb(0 0 0 / 0.2) !important;
+    transform: translate(5px,5px);
+  }
+}
+
+#SpinBlock{
+  position: relative;
+  top: 0;
+}
+.roll{
+  animation: spin 0.5s linear;
+  animation-iteration-count: 6;
+}
+
+@keyframes spin {
+  0%{
+    top:-170px;
+
+  }
+  100%{
+    top:170px;
+    opacity: 0;
+  }
+}
